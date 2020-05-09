@@ -582,8 +582,8 @@ namespace OpenCVForUnityExample
             MatOfInt indices = new MatOfInt();
             Dnn.NMSBoxes(boxes, confidences, confThreshold, nmsThreshold, indices);
 
-            Debug.Log("indices.dump () " + indices.dump());
-            Debug.Log("indices.ToString () " + indices.ToString());
+            //            Debug.Log ("indices.dump () "+indices.dump ());
+            //            Debug.Log ("indices.ToString () "+indices.ToString());
 
             for (int i = 0; i < indices.total(); ++i)
             {
