@@ -971,6 +971,12 @@ namespace RealTimeFaceRecognitionExample
                             {
                                 GUI_ID[c_identity].SetActive(true); // Set GUI ID active when detected
                             }
+
+                            //debug and testing
+                            //else
+                            //{
+                            //    GUI_ID[c_identity].SetActive(false);
+                            //}
                             confidence = predictedConfidence[0];
                             //GUI_ID[0].transform.localScale = new Vector3(Convert.ToSingle(100.0f-(faceRect.y)/1000),  Convert.ToSingle(100.0f- (faceRect.y)/1000), 1);
 
