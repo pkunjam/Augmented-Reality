@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/OpenCVForUnity/Examples/MainModules/dnn/ResnetSSDFaceDetectionExample/ResnetSSDFaceDetectionExample.unity
+- path: Assets/OpenCVForUnity/Examples/MainModules/dnn/MobileNetSSDExample/MobileNetSSDWebCamTextureExample.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

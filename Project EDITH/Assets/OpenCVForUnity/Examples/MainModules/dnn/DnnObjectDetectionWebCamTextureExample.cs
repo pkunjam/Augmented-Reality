@@ -64,6 +64,10 @@ namespace OpenCVForUnityExample
         /// </summary>
         Texture2D texture;
         public GameObject[] GUIObject;
+        public GameObject[] sphere;
+        public int ClassID; // Public variable for Class ID
+        public float[] validTimer; //Seconds until game object disappears.
+        public float speed = 100.0f;
 
 
         /// <summary>
@@ -84,7 +88,7 @@ namespace OpenCVForUnityExample
         /// <summary>
         /// The FPS monitor.
         /// </summary>
-        FpsMonitor fpsMonitor;
+        //FpsMonitor fpsMonitor;
 
 
         List<string> classNames;
@@ -102,7 +106,12 @@ namespace OpenCVForUnityExample
         // Use this for initialization
         void Start()
         {
-            fpsMonitor = GetComponent<FpsMonitor>();
+            //fpsMonitor = GetComponent<FpsMonitor> ();
+
+            for (int i = 0; i < GUIObject.Length; i++)
+            {
+                GUIObject[i].SetActive(false);
+            }
 
             webCamTextureToMatHelper = gameObject.GetComponent<WebCamTextureToMatHelper>();
 
@@ -213,12 +222,11 @@ namespace OpenCVForUnityExample
             gameObject.transform.localScale = new Vector3(webCamTextureMat.cols(), webCamTextureMat.rows(), 1);
             Debug.Log("Screen.width " + Screen.width + " Screen.height " + Screen.height + " Screen.orientation " + Screen.orientation);
 
-            if (fpsMonitor != null)
-            {
-                fpsMonitor.Add("width", webCamTextureMat.width().ToString());
-                fpsMonitor.Add("height", webCamTextureMat.height().ToString());
-                fpsMonitor.Add("orientation", Screen.orientation.ToString());
-            }
+            /*if (fpsMonitor != null) {
+                fpsMonitor.Add ("width", webCamTextureMat.width ().ToString ());
+                fpsMonitor.Add ("height", webCamTextureMat.height ().ToString ());
+                fpsMonitor.Add ("orientation", Screen.orientation.ToString ());
+            }*/
 
 
             float width = webCamTextureMat.width();
@@ -268,6 +276,39 @@ namespace OpenCVForUnityExample
         // Update is called once per frame
         void Update()
         {
+            for (int i = 0; i < validTimer.Length; i++)
+            {
+                validTimer[i] -= Time.deltaTime;
+                if (validTimer[i] <= 0.0f)
+                {
+                    timerEnded(i);
+                }
+            }
+
+
+            switch (ClassID)
+            {
+                case 20: //LCD
+                    GUIObject[3].transform.position = Vector3.MoveTowards(GUIObject[3].transform.position, sphere[3].transform.position, Time.deltaTime * speed);
+                    break;
+                case 12: //Dog
+                    GUIObject[3].transform.position = Vector3.MoveTowards(GUIObject[3].transform.position, sphere[3].transform.position, Time.deltaTime * speed);
+                    break;
+                case 9: // Chair
+                    GUIObject[2].transform.position = Vector3.MoveTowards(GUIObject[2].transform.position, sphere[2].transform.position, Time.deltaTime * speed);
+                    break;
+                case 5: // Bottle
+                    GUIObject[1].transform.position = Vector3.MoveTowards(GUIObject[1].transform.position, sphere[1].transform.position, Time.deltaTime * speed);
+                    break;
+                case 15:// Civilian
+                    GUIObject[0].transform.position = Vector3.MoveTowards(GUIObject[0].transform.position, sphere[0].transform.position, Time.deltaTime * speed);
+                    break;
+                default:
+                    print("Unknown");
+                    break;
+            }
+
+
             if (webCamTextureToMatHelper.IsPlaying() && webCamTextureToMatHelper.DidUpdateThisFrame())
             {
 
@@ -444,7 +485,7 @@ namespace OpenCVForUnityExample
                 // Network produces output blob with a shape 1x1xNx7 where N is a number of
                 // detections and an every detection is a vector of values
                 // [batchId, classId, confidence, left, top, right, bottom]
-
+                //Debug.Log("class list" + classIdsList); 
                 if (outs.Count == 1)
                 {
 
@@ -535,7 +576,7 @@ namespace OpenCVForUnityExample
 
                     float[] positionData = new float[5];
                     float[] confidenceData = new float[outs[i].cols() - 5];
-
+                    //Debug.Log("position data" + positionData);
                     for (int p = 0; p < outs[i].rows(); p++)
                     {
 
@@ -584,26 +625,27 @@ namespace OpenCVForUnityExample
 
             //            Debug.Log ("indices.dump () "+indices.dump ());
             //            Debug.Log ("indices.ToString () "+indices.ToString());
-
+            Debug.Log("/////");
             for (int i = 0; i < indices.total(); ++i)
             {
                 int idx = (int)indices.get(i, 0)[0];
-
+                Debug.Log("class list" + classIdsList[idx]);
                 OpenCVForUnity.CoreModule.Rect box = boxesList[idx];
                 drawPred(classIdsList[idx], confidencesList[idx], box.x, box.y,
                     box.x + box.width, box.y + box.height, frame);
-                Debug.Log("Total Indices : " + indices.total());
-
-                GUIObject[idx].transform.position = new Vector3(box.x - 290, -box.y + 200, 0);
-                GUIObject[idx].transform.localScale = new Vector3(box.width, box.height, box.height);
 
 
             }
-
+            Debug.Log("END/////");
             indices.Dispose();
             boxes.Dispose();
             confidences.Dispose();
 
+        }
+
+        void timerEnded(int guiObjectIdx)
+        {
+            GUIObject[guiObjectIdx].SetActive(false);
         }
 
         /// <summary>
@@ -618,7 +660,9 @@ namespace OpenCVForUnityExample
         /// <param name="frame">Frame.</param>
         private void drawPred(int classId, float conf, int left, int top, int right, int bottom, Mat frame)
         {
-            Imgproc.rectangle(frame, new Point(left, top), new Point(right, bottom), new Scalar(0, 255, 0, 255), 2);
+
+            ClassID = classId;
+            //Imgproc.rectangle (frame, new Point (left, top), new Point (right, bottom), new Scalar (0, 255, 0, 255), 2);
 
             string label = conf.ToString();
             if (classNames != null && classNames.Count != 0)
@@ -634,9 +678,48 @@ namespace OpenCVForUnityExample
             Size labelSize = Imgproc.getTextSize(label, Imgproc.FONT_HERSHEY_SIMPLEX, 0.5, 1, baseLine);
 
             top = Mathf.Max(top, (int)labelSize.height);
-            Imgproc.rectangle(frame, new Point(left, top - labelSize.height),
-                new Point(left + labelSize.width, top + baseLine[0]), Scalar.all(255), Core.FILLED);
-            Imgproc.putText(frame, label, new Point(left, top), Imgproc.FONT_HERSHEY_SIMPLEX, 0.5, new Scalar(0, 0, 0, 255));
+            //Imgproc.rectangle (frame, new Point (left, top - labelSize.height),
+            // new Point (left + labelSize.width, top + baseLine [0]), Scalar.all (255), Core.FILLED);
+            //Imgproc.putText (frame, label, new Point (left, top), Imgproc.FONT_HERSHEY_SIMPLEX, 0.5, new Scalar (0, 0, 0, 255));
+
+
+            switch (classId)
+            {
+
+                case 15: // Civilian
+                    GUIObject[0].SetActive(true);
+                    sphere[0].transform.position = new Vector3(left - 290, -top + 200, 0);  // Position of the class 
+                    GUIObject[0].transform.localScale = new Vector3(bottom / 10, bottom / 10, bottom / 10);
+                    validTimer[0] = 5.0f;
+                    break;
+                case 5: // Bottle
+                    GUIObject[1].SetActive(true);
+                    sphere[1].transform.position = new Vector3(left - 290, -top + 200, 0);  // Position of the class 
+                    GUIObject[1].transform.localScale = new Vector3(bottom / 10, bottom / 10, bottom / 10);
+                    validTimer[1] = 5.0f;
+                    break;
+                case 9: // Chair
+                    GUIObject[2].SetActive(true);
+                    sphere[2].transform.position = new Vector3(left - 290, -top + 200, 0);  // Position of the class 
+                    GUIObject[2].transform.localScale = new Vector3(bottom / 10, bottom / 10, bottom / 10);
+                    validTimer[2] = 5.0f;
+                    break;
+                case 12: // Dog
+                    GUIObject[3].SetActive(true);
+                    sphere[3].transform.position = new Vector3(left - 290, -top + 200, 0);  // Position of the class 
+                    GUIObject[3].transform.localScale = new Vector3(bottom / 10, bottom / 10, bottom / 10);
+                    validTimer[3] = 5.0f;
+                    break;
+                case 20: // LCD
+                    GUIObject[4].SetActive(true);
+                    sphere[4].transform.position = new Vector3(left - 290, -top + 200, 0);  // Position of the class 
+                    GUIObject[4].transform.localScale = new Vector3(bottom / 10, bottom / 10, bottom / 10);
+                    validTimer[4] = 5.0f;
+                    break;
+                default:
+                    //print("Unknown");
+                    break;
+            }
         }
 
         /// <summary>
