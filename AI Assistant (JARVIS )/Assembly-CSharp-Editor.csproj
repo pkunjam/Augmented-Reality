@@ -301,14 +301,14 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Assets/unity-sdk-2.13.0/unity-sdk-2.13.0/Plugins/websocket-sharp.dll</HintPath>
+    </Reference>
     <Reference Include="Vuforia.UnityExtensions.Editor">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/PackageCache/com.ptc.vuforia.engine@8.5.9/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/PackageCache/com.ptc.vuforia.engine@8.5.9/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Assets/unity-sdk-2.13.0/unity-sdk-2.13.0/Plugins/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
