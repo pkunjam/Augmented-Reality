@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4083FB96-7133-A982-C11A-FF2EE4C77D8E}</ProjectGuid>
+    <ProjectGuid>{526C96E0-D6B8-DC64-8A03-0D9B38F772E2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -71,43 +71,43 @@
     <None Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Scripts\Editor\Help\Working\StopWordList.txt" />
     <None Include="Assets\Editor\Vuforia\CylinderTargetTextures\VuforiaMars_Images\authoringinfo.xml" />
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="VuforiaScripts">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/VuforiaScripts.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="VuforiaEditorScripts">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/VuforiaEditorScripts.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -301,17 +301,17 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Assets/unity-sdk-2.13.0/unity-sdk-2.13.0/Plugins/websocket-sharp.dll</HintPath>
-    </Reference>
     <Reference Include="Vuforia.UnityExtensions.Editor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/PackageCache/com.ptc.vuforia.engine@8.5.9/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/PackageCache/com.ptc.vuforia.engine@8.5.9/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/PackageCache/com.ptc.vuforia.engine@8.5.9/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/PackageCache/com.ptc.vuforia.engine@8.5.9/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Assets/unity-sdk-2.13.0/unity-sdk-2.13.0/Plugins/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/AI Assistant (JARVIS )/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -669,8 +669,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{F273245D-2C45-87D8-9B14-184C5E3A0AB6}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{359C2990-A7E2-7A34-18EC-6F89862C6459}</Project>
+      <Project>{B6DFFD17-4B09-7E25-13FA-CA460279DAE2}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

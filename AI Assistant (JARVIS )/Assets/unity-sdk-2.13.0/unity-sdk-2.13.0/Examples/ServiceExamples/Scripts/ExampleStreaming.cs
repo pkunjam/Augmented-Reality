@@ -269,8 +269,9 @@ public class ExampleStreaming : MonoBehaviour
 
                     if (text.Contains("status") && State.Contains("Final")) // needs to be final or ECHO happens
                     {
+                        StopRecording();
                         StartCoroutine(ExampleTextToSpeech.I5_Change());
-
+                        StartRecording();
                     }
 
                     if (text.Contains("great") && State.Contains("Final")) // needs to be final or ECHO happens
