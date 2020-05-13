@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/test.unity
+- path: Assets/unity-sdk-2.13.0/unity-sdk-2.13.0/Examples/ServiceExamples/ExampleStreaming.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

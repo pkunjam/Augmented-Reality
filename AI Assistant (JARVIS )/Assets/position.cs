@@ -22,7 +22,7 @@ public class position : MonoBehaviour
             obj[i].transform.position = Vector3.MoveTowards(obj[i].transform.position, Vector3.zero, 3 * Time.deltaTime);
             i++;
 
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.3f);
         }
     }
 

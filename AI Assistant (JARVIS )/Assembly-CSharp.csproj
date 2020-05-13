@@ -426,6 +426,7 @@
     <None Include="Assets\Hologram Shader\Shader\Hologram Shader.shader" />
     <None Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Examples\ServiceExamples\TestData\speech-to-text\theJabberwocky-utf8.txt" />
     <None Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Examples\ServiceExamples\TestData\Discovery\stopwords.txt" />
+    <None Include="Assets\StreamingAssets\Vuforia\AI.xml" />
     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
     <None Include="Assets\Hologram Shader\Shader\Vertex Glow Shader.shader" />
     <None Include="Assets\3y3net Assets\Hologram\Shader\HoloShader.shader" />
