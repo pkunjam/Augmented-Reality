@@ -67,9 +67,8 @@
     <Compile Include="Assets\3y3net Assets\Hologram\SampleScene\holoScene.cs" />
     <Compile Include="Assets\3y3net Assets\Hologram\SampleScene\maxCamera.cs" />
     <Compile Include="Assets\3y3net Assets\Hologram\SampleScene\RotateObjectSimple.cs" />
+    <Compile Include="Assets\position.cs" />
     <Compile Include="Assets\rotate.cs" />
-    <Compile Include="Assets\test.cs" />
-    <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Examples\ServiceExamples\Scripts\ExampleAssistantV1.cs" />
     <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Examples\ServiceExamples\Scripts\ExampleAssistantV2.cs" />
     <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Examples\ServiceExamples\Scripts\ExampleCallback.cs" />
     <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Examples\ServiceExamples\Scripts\ExampleCompareComplyV1.cs" />
@@ -334,7 +333,6 @@
     <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Scripts\Services\ToneAnalyzer\v3\ToneAnalyzer.cs" />
     <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Scripts\Services\VisualRecognition\v3\DataModels.cs" />
     <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Scripts\Services\VisualRecognition\v3\VisualRecognition.cs" />
-    <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Scripts\UnitTests\TestAssistantV1.cs" />
     <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Scripts\UnitTests\TestAssistantV2.cs" />
     <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Scripts\UnitTests\TestCompareComplyV1.cs" />
     <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Scripts\UnitTests\TestDiscovery.cs" />

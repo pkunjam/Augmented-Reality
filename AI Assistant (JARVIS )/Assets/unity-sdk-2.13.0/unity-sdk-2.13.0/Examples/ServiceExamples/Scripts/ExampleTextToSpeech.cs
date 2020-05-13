@@ -47,24 +47,24 @@ public class ExampleTextToSpeech : MonoBehaviour
 
     string _createdCustomizationId;
     CustomVoiceUpdate _customVoiceUpdate;
-    string _customizationName = "unity-example-customization";
-    string _customizationLanguage = "en-US";
-    string _customizationDescription = "A text to speech voice customization created within Unity.";
+    //string _customizationName = "unity-example-customization";
+    //string _customizationLanguage = "en-US";
+    //string _customizationDescription = "A text to speech voice customization created within Unity.";
     string _testWord = "Watson";
 
     private bool _synthesizeTested = false;
     private bool _getVoicesTested = false;
     private bool _getVoiceTested = false;
     private bool _getPronuciationTested = false;
-    private bool _getCustomizationsTested = false;
-    private bool _createCustomizationTested = false;
-    private bool _deleteCustomizationTested = false;
-    private bool _getCustomizationTested = false;
-    private bool _updateCustomizationTested = false;
-    private bool _getCustomizationWordsTested = false;
-    private bool _addCustomizationWordsTested = false;
-    private bool _deleteCustomizationWordTested = false;
-    private bool _getCustomizationWordTested = false;
+    //private bool _getCustomizationsTested = false;
+    //private bool _createCustomizationTested = false;
+    //private bool _deleteCustomizationTested = false;
+    //private bool _getCustomizationTested = false;
+    //private bool _updateCustomizationTested = false;
+    //private bool _getCustomizationWordsTested = false;
+    //private bool _addCustomizationWordsTested = false;
+    //private bool _deleteCustomizationWordTested = false;
+    //private bool _getCustomizationWordTested = false;
 
     public static int SpeakState = 0;
 
