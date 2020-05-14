@@ -91,6 +91,11 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\LogRequestUtils.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\PreprocessBuildBase.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\RequiredOptionalPreprocessBuild.cs" />
+    <Compile Include="Assets\Hologram Shader\Shader\Editor\HoloGramInspector.cs" />
+    <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Scripts\Editor\IBMCloudSignup.cs" />
+    <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Scripts\Editor\WatsonMenu.cs" />
+    <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\ThirdParty\FullSerializer\Aot\Editor\fsAotConfigurationEditor.cs" />
+    <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\ThirdParty\FullSerializer\Editor\AotHelpers.cs" />
     <None Include="Assets\GoogleARCore\Editor\ARCoreiOSDependencies.template" />
     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt" />
     <Reference Include="UnityEditor.TestRunner">
@@ -353,6 +358,9 @@
     </Reference>
     <Reference Include="Google.VersionHandlerImpl_v1.2.122.0">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.122.0.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/unity-sdk-2.13.0/unity-sdk-2.13.0/Plugins/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -713,6 +721,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{747C4EA0-3521-DF93-26FE-F78C42CB9132}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{C8E46241-F131-BD54-CF3E-65255D808383}</Project>
       <Name>Assembly-CSharp</Name>
