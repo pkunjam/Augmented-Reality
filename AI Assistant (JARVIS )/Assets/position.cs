@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class position : MonoBehaviour
 {
@@ -7,23 +8,44 @@ public class position : MonoBehaviour
     public GameObject[] obj = new GameObject[size];
 
 
-    void Update()
+    void Start()
     {
-        StartCoroutine(integrate());
+        //StartCoroutine(integrate());
+        StartCoroutine(Parts());
     }
 
 
-    IEnumerator integrate()
+    //IEnumerator integrate()
+    //{
+    //    int i = 0;
+
+    //    while (i < obj.Length)
+    //    {
+    //        obj[i].transform.position = Vector3.MoveTowards(obj[i].transform.position, Vector3.zero, 3 * Time.deltaTime);
+    //        i++;
+
+    //        yield return new WaitForSeconds(0.3f);
+    //    }
+    //}
+
+    IEnumerator MoveTargetToDestinations(GameObject[] gameObjects, float speed)
     {
-        int i = 0;
-
-        while (i < obj.Length)
+        foreach (var gameObject in gameObjects)
         {
-            obj[i].transform.position = Vector3.MoveTowards(obj[i].transform.position, Vector3.zero, 3 * Time.deltaTime);
-            i++;
+            while (true)
+            {
+                if (Vector3.Distance(gameObject.transform.position, Vector3.zero) <= 0)
+                    break;
 
-            yield return new WaitForSeconds(0.3f);
+                gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, Vector3.zero, speed * Time.deltaTime);
+                yield return null;
+            }
         }
+    }
+
+    IEnumerator Parts()
+    {
+        yield return MoveTargetToDestinations(obj,4);
     }
 
 }

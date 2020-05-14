@@ -257,6 +257,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -272,17 +275,14 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    <Reference Include="com.unity.multiplayer-weaver.Editor">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
@@ -290,14 +290,14 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
