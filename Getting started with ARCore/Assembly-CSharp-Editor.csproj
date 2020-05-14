@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Extras\Hologram Shader\Shader\Editor\HoloGramInspector.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\Common\Scripts\Editor\PointcloudVisualizerEditor.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\InstantPreview\Scripts\Editor\InstantPreviewBugReport.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\Analytics\ArcoreClearcut.cs" />
@@ -91,11 +92,6 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\LogRequestUtils.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\PreprocessBuildBase.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\RequiredOptionalPreprocessBuild.cs" />
-    <Compile Include="Assets\Hologram Shader\Shader\Editor\HoloGramInspector.cs" />
-    <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Scripts\Editor\IBMCloudSignup.cs" />
-    <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\Scripts\Editor\WatsonMenu.cs" />
-    <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\ThirdParty\FullSerializer\Aot\Editor\fsAotConfigurationEditor.cs" />
-    <Compile Include="Assets\unity-sdk-2.13.0\unity-sdk-2.13.0\ThirdParty\FullSerializer\Editor\AotHelpers.cs" />
     <None Include="Assets\GoogleARCore\Editor\ARCoreiOSDependencies.template" />
     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt" />
     <Reference Include="UnityEditor.TestRunner">
@@ -106,9 +102,6 @@
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
@@ -125,14 +118,17 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
@@ -140,14 +136,14 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-weaver.Editor">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
@@ -347,9 +343,6 @@
     <Reference Include="Google.Protobuf">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
     </Reference>
-    <Reference Include="Google.IOSResolver_v1.2.122.0">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.122.0.dll</HintPath>
-    </Reference>
     <Reference Include="Google.JarResolver_v1.2.122.0">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.122.0.dll</HintPath>
     </Reference>
@@ -359,8 +352,8 @@
     <Reference Include="Google.VersionHandlerImpl_v1.2.122.0">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.122.0.dll</HintPath>
     </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/unity-sdk-2.13.0/unity-sdk-2.13.0/Plugins/websocket-sharp.dll</HintPath>
+    <Reference Include="Google.IOSResolver_v1.2.122.0">
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.122.0.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -721,10 +714,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{747C4EA0-3521-DF93-26FE-F78C42CB9132}</Project>
-      <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{C8E46241-F131-BD54-CF3E-65255D808383}</Project>
       <Name>Assembly-CSharp</Name>

@@ -9,8 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Holographic Tr
   m_Shader: {fileID: 4800000, guid: fa97e02039eb0fa4797e79356ed1451f, type: 3}
-  m_ShaderKeywords: DEFORM_ON DISSOLVE_ON FRESNEL_ON _DISPLACEMENTSWITCH_ON _EMISSION
-    _USESCREENSPACESCANLINES_ON
+  m_ShaderKeywords: DEFORM_ON DISSOLVE_ON FRESNEL_ON _EMISSION _TOGGLESCANLINEDEFORM_ON
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -90,27 +93,38 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _Dis: 0.124
-    - _DisplacementSwitch: 1
+    - _DisplacementSwitch: 0
     - _DstBlend: 0
     - _EdjeSize: 0.099
     - _EmP: -0.11
     - _Emission: 1.32
+    - _GlitchIntensity: 0
+    - _GlitchSpeed: 50
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _GlowIntensity: 0.5
     - _HolOffSet: 0.01
     - _HolTile: 3.35
+    - _HoloAlpha: 0.6
+    - _HoloLineAlpha: 0.5
+    - _HoloLineRotation: 0
+    - _HoloLineSeparation: 1
+    - _HoloLineThickness: 2
+    - _HoloNoise: 0.2
+    - _HoloSpeed: 0.3
     - _Metallic: 0
     - _Mode: 0
     - _NoiseLevel: 0
-    - _OSSsize: 5
+    - _OSSsize: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Power: 3
-    - _RandomNoiseLevel: 0.78
+    - _RandomNoiseLevel: 0.51
     - _RimPower: 7.95
-    - _SSSsize: 0.05
+    - _SSSsize: 1
     - _Scale: 2
+    - _ScrollSpeedV: 1
     - _ShakeBending: 0.08
     - _ShakeDisplacement: 3.54
     - _ShakeTime: 0.27
@@ -119,9 +133,9 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _ToggleGlitch: 0
-    - _ToggleScanlineDeform: 0
+    - _ToggleScanlineDeform: 1
     - _UVSec: 0
-    - _UseScreenSpaceScanlines: 1
+    - _UseScreenSpaceScanlines: 0
     - _ZWrite: 1
     - __dirty: 1
     - fresnel: 1
@@ -129,4 +143,5 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorEm: {r: 0.3839749, g: 0.91064763, b: 0.9852941, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _Tint: {r: 0, g: 0.46613693, b: 1, a: 0}
+    - _HoloColor: {r: 0, g: 0.9586205, b: 1, a: 1}
+    - _Tint: {r: 0, g: 0.6039216, b: 1, a: 0}

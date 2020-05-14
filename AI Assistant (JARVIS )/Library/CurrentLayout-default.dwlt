@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 127
+  controlID: 52
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -308,10 +308,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -640
-    m_HBaseRangeMax: 640
-    m_VBaseRangeMin: -360
-    m_VBaseRangeMax: 360
+    m_HBaseRangeMin: -512
+    m_HBaseRangeMax: 512
+    m_VBaseRangeMin: -288
+    m_VBaseRangeMax: 288
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -331,7 +331,7 @@ MonoBehaviour:
       y: 17
       width: 960
       height: 357
-    m_Scale: {x: 0.49583334, y: 0.49583334}
+    m_Scale: {x: 0.6197917, y: 0.6197917}
     m_Translation: {x: 480, y: 178.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -339,15 +339,15 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -968.0672
-      y: -360
-      width: 1936.1344
-      height: 720
+      x: -774.45374
+      y: -288
+      width: 1548.9075
+      height: 576
     m_MinimalGUI: 1
-  m_defaultScale: 0.49583334
+  m_defaultScale: 0.6197917
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 960, y: 374}
+  m_LastWindowPixelSize: {x: 1200, y: 467.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -381,23 +381,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 98320000
+      m_SelectedIDs: 9eca0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 6afbffff
+      m_ExpandedIDs: 3c2cf8ff722cf8ff6a2ef8ffa4c6faff7cc8fdff16cbfdff2eccfdffbacdfdff3ecffdffcad0fdffc4dcfdffe4defdff1ed3feff9cd3feff1afaffff68fbffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: holoDeck (1)
+        m_OriginalName: holoDeck (1)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -142278
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -443,9 +443,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.8817497, y: -0.3602421, z: 0.32187885}
+    m_Target: {x: 4.293157, y: -27.257565, z: -75.49901}
     speed: 2
-    m_Value: {x: -0.8817497, y: -0.3602421, z: 0.32187885}
+    m_Value: {x: 4.293157, y: -27.257565, z: -75.49901}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -474,13 +474,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.15715154, y: 0.5660199, z: -0.11088263, w: -0.8018192}
+    m_Target: {x: -0.0059327097, y: -0.9811216, z: 0.19195467, w: -0.030004222}
     speed: 2
-    m_Value: {x: -0.15715155, y: 0.5660199, z: -0.11088263, w: -0.80181926}
+    m_Value: {x: -0.005976535, y: -0.98064554, z: 0.19338927, w: -0.029989576}
   m_Size:
-    m_Target: 1.1742806
+    m_Target: 91.30745
     speed: 2
-    m_Value: 1.1742806
+    m_Value: 95.60989
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -545,11 +545,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/3y3net Assets/Hologram
+    - Assets/3D models
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/3y3net Assets/Hologram
+  - Assets/3D models
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Punit\Desktop\Augmented Reality\AI Assistant (JARVIS
     )
@@ -557,9 +557,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 72320000
-    m_LastClickedID: 12914
-    m_ExpandedIDs: 000000006e31000034320000723200007a320000803400005a35000088350000b035000000ca9a3b
+    m_SelectedIDs: 0ab60000
+    m_LastClickedID: 46602
+    m_ExpandedIDs: 000000006e31000034320000723200007a320000983200003a330000723300002e340000383400006e34000080340000063500005a35000088350000b03500005e38000024390000323900001e5d00004a5d0000565d0000725d0000745d00008c5d0000925d0000245e00000ab600003cb6000074b6000076b6000080b6000080bc000066c40000aec500006eca000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -615,21 +615,21 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000026650000000000000a530000fe5b0000
+    m_ExpandedInstanceIDs: c623000026650000000000000a530000fe5b00002a390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: 3D models
+      m_OriginalName: 3D models
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 46602
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -706,4 +706,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 13.87156
+  m_LastVerticalScrollValue: 69

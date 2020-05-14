@@ -5053,10 +5053,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6556848279569457845}
-  - component: {fileID: 1170443891495040703}
   - component: {fileID: 6556848279569457844}
   m_Layer: 0
-  m_Name: ironman final
+  m_Name: IronMan final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5108,27 +5107,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1170443891495040703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6556848279569457851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10a460d9237a2b440add704fdbbff918, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectOn: 1
-  HologramColor: {r: 0.61385053, g: 0.9485294, b: 0.45334125, a: 1}
-  HologramAlpha: 0.218
-  HologramSpeed: 0.268
-  HologramNoise: 0
-  LineSeparation: 1.63
-  LineThickness: 2.1
-  LineAlpha: 0.49
-  LineRotation: 0
 --- !u!95 &6556848279569457844
 Animator:
   serializedVersion: 3
