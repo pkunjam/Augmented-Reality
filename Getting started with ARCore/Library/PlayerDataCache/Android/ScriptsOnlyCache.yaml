@@ -5,14 +5,17 @@ ScriptsOnlyBuild:
     - GoogleARCore.ARCoreCameraConfigFilter
     - GoogleARCore.ARCoreSession
     - GoogleARCore.ARCoreSessionConfig
+    - GoogleARCore.Examples.Common.DetectedPlaneGenerator
+    - GoogleARCore.Examples.Common.DetectedPlaneVisualizer
     - GoogleARCore.Examples.Common.PointcloudVisualizer
+    - InstantiateObjectOnTouch
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
   sceneClasses:
-    Assets/Scenes/PointPlane Detection.unity:
+    Assets/Scenes/Hit testing.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -31,6 +34,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 104
@@ -48,7 +55,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11444}
     - Class: 114
+      Script: {instanceID: 11666}
+    - Class: 114
+      Script: {instanceID: 11770}
+    - Class: 114
       Script: {instanceID: 11818}
+    - Class: 114
+      Script: {instanceID: 14492}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -834,8 +847,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: fe51e5e5f02767f5fe8cf3f0f795f783
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InstantiateObjectOnTouch
   platform: 13
   scenePathNames:
-  - Assets/Scenes/PointPlane Detection.unity
-  playerPath: C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Build/PointPlane
-    Detection.apk
+  - Assets/Scenes/Hit testing.unity
+  playerPath: C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Build/Hit
+    Testing.apk

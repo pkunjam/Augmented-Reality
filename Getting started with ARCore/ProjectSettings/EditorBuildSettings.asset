@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Motion Tracking.unity
     guid: bf610d318c5c5b74189200a9d2a75b25
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PointPlane Detection.unity
     guid: a3ee642c820ccfe469d7bc89c4015d83
+  - enabled: 1
+    path: Assets/Scenes/Hit testing.unity
+    guid: 17aaac1ee1000c042b307cfe9e438fb8
   m_configObjects: {}

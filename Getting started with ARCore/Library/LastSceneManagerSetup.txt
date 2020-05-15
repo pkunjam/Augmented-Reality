@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/PointPlane Detection.unity
+- path: Assets/Scenes/Hit testing.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
