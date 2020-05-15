@@ -5,13 +5,14 @@ ScriptsOnlyBuild:
     - GoogleARCore.ARCoreCameraConfigFilter
     - GoogleARCore.ARCoreSession
     - GoogleARCore.ARCoreSessionConfig
-    - rotate
+    - GoogleARCore.Examples.Common.PointcloudVisualizer
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
   sceneClasses:
-    Assets/Scenes/Motion Tracking.unity:
+    Assets/Scenes/PointPlane Detection.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -30,6 +31,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -39,13 +42,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10740}
     - Class: 114
+      Script: {instanceID: 10918}
+    - Class: 114
       Script: {instanceID: 11358}
     - Class: 114
       Script: {instanceID: 11444}
     - Class: 114
       Script: {instanceID: 11818}
-    - Class: 114
-      Script: {instanceID: 12090}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -833,6 +836,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Motion Tracking.unity
-  playerPath: C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Motion
-    Tracking.apk
+  - Assets/Scenes/PointPlane Detection.unity
+  playerPath: C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Build/PointPlane
+    Detection.apk

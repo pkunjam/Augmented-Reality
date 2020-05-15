@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 57
+  controlID: 54
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 58
+  controlID: 55
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 59
+  controlID: 56
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,8 +184,8 @@ MonoBehaviour:
     y: 0
     width: 242
     height: 393
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 960, y: 374}
+  m_LastWindowPixelSize: {x: 1200, y: 467.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -381,9 +381,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b2570000
-      m_LastClickedID: 22450
-      m_ExpandedIDs: 0cceffff3eceffff40ceffffd2ceffff42cfffff74cfffff84d0ffff9ed5ffff18d7ffff1ad7ffffa4d7ffff56dbffffdef9ffff36fbffffca580000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: c6c9fffff8c9ffff08cbffff82ceffff84ceffffc4d0ffff14d1ffff04d2ffff36d2ffff38d2ffff4ed3ffff50d3ffffa4d4ffff06dcffff38dcffff48ddffff0edeffff10deffffd0dfffffa6f6ffff00f7ffff36fbffffea3e00001e400000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -443,9 +443,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.3356044, y: -2.675243, z: -10.31777}
+    m_Target: {x: 0.5685475, y: -6.2186604, z: -13.28635}
     speed: 2
-    m_Value: {x: 0.00056526065, y: 1.346267, z: 0.038877234}
+    m_Value: {x: 0.5685475, y: -6.2186604, z: -13.28635}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -474,13 +474,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.014538383, y: 0.9798914, z: -0.18318395, w: -0.077769}
+    m_Target: {x: 0.003485358, y: 0.9735973, z: -0.22776625, w: 0.014898274}
     speed: 2
-    m_Value: {x: -0.014538363, y: 0.97989, z: -0.18318368, w: -0.077768885}
+    m_Value: {x: 0.0034853527, y: 0.9735958, z: -0.22776589, w: 0.014898251}
   m_Size:
     m_Target: 18.475094
     speed: 2
-    m_Value: 4.9194217
+    m_Value: 18.475094
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -533,7 +533,7 @@ MonoBehaviour:
     height: 319
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: 
+    m_NameFilter: plane
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -545,21 +545,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Punit\Desktop\Augmented Reality\Getting started with
     ARCore
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 0e300000
-    m_LastClickedID: 12302
-    m_ExpandedIDs: 000000000e300000f63100002e320000583200005436000000ca9a3b
+    scrollPos: {x: 0, y: 449}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 000000000e3000002c310000f8310000303200005a320000a03400008635000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
