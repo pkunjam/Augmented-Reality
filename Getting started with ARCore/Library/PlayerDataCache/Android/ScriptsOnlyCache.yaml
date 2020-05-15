@@ -1,15 +1,19 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - DragonControls
+    - FixedJoystick
     - GoogleARCore.ARCoreBackgroundRenderer
     - GoogleARCore.ARCoreCameraConfigFilter
     - GoogleARCore.ARCoreSession
     - GoogleARCore.ARCoreSessionConfig
     - GoogleARCore.EnvironmentalLight
+    - GoogleARCore.Examples.Common.DetectedPlaneGenerator
     - GoogleARCore.Examples.Common.DetectedPlaneVisualizer
-    - GoogleARCore.HelloAR.ARSceneController
-    - IsDark
-    - MonsterMove
+    - GoogleARCore.Examples.Common.PlaneDiscoveryGuide
+    - GoogleARCore.Examples.Common.PointcloudVisualizer
+    - GoogleARCore.Examples.Common.RawImageVideoPlayer
+    - GoogleARCore.Examples.HelloAR.HelloARController
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -18,12 +22,15 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/Light Estimation.unity:
+    Assets/Scenes/DragonAR.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -44,63 +51,75 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
+    - Class: 84
       Script: {instanceID: 0}
     - Class: 89
-      Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9742}
+      Script: {instanceID: 9740}
     - Class: 114
       Script: {instanceID: 9990}
     - Class: 114
-      Script: {instanceID: 10044}
+      Script: {instanceID: 9996}
     - Class: 114
-      Script: {instanceID: 10454}
+      Script: {instanceID: 10048}
     - Class: 114
-      Script: {instanceID: 10464}
+      Script: {instanceID: 10398}
     - Class: 114
-      Script: {instanceID: 10542}
+      Script: {instanceID: 10462}
     - Class: 114
-      Script: {instanceID: 10742}
+      Script: {instanceID: 10472}
     - Class: 114
-      Script: {instanceID: 11360}
+      Script: {instanceID: 10490}
     - Class: 114
-      Script: {instanceID: 11446}
+      Script: {instanceID: 10550}
     - Class: 114
-      Script: {instanceID: 11664}
+      Script: {instanceID: 10576}
     - Class: 114
-      Script: {instanceID: 11772}
+      Script: {instanceID: 10662}
     - Class: 114
-      Script: {instanceID: 11820}
+      Script: {instanceID: 10756}
     - Class: 114
-      Script: {instanceID: 12164}
+      Script: {instanceID: 10936}
     - Class: 114
-      Script: {instanceID: 17106}
+      Script: {instanceID: 11076}
     - Class: 114
-      Script: {instanceID: 17110}
+      Script: {instanceID: 11100}
     - Class: 114
-      Script: {instanceID: 17112}
+      Script: {instanceID: 11292}
+    - Class: 114
+      Script: {instanceID: 11378}
+    - Class: 114
+      Script: {instanceID: 11464}
+    - Class: 114
+      Script: {instanceID: 11684}
+    - Class: 114
+      Script: {instanceID: 11688}
+    - Class: 114
+      Script: {instanceID: 11792}
+    - Class: 114
+      Script: {instanceID: 11842}
+    - Class: 114
+      Script: {instanceID: 12188}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -110,6 +129,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
+      Script: {instanceID: 0}
   scriptHashData:
   - hash:
       serializedVersion: 2
@@ -117,6 +140,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: b48c8d99d321541a536d9c6093f31c5d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerExample
   - hash:
       serializedVersion: 2
       Hash: 3c08375166df118bd1801438fc36b92f
@@ -209,6 +238,12 @@ ScriptsOnlyBuild:
     className: NetworkIdentity
   - hash:
       serializedVersion: 2
+      Hash: 3873f7ea95a7920abb506a987b6eb6ba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LightEstimationTest
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -219,6 +254,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 3e4274eeaccc5d218a056c2ab43c7847
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Joystick
   - hash:
       serializedVersion: 2
       Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
@@ -341,6 +382,18 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 3e4274eeaccc5d218a056c2ab43c7847
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixedJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: fe51e5e5f02767f5fe8cf3f0f795f783
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InstantiateObjectOnTouch
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.ObjectManipulation
@@ -389,7 +442,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: f3d1807a613ed4b83d9c90e8aa51a8a1
+      Hash: 76b4e679330ffc5c2b27d07c80e1cd7c
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.HelloAR
     className: HelloARController
@@ -419,6 +472,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 134211f8617feac79d1904f72096b546
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DragonControls
+  - hash:
+      serializedVersion: 2
       Hash: 0451019579614cc079b33f5be5df7244
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.CloudAnchors
@@ -437,6 +496,18 @@ ScriptsOnlyBuild:
     className: NetworkTransformVisualizer
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MonsterMove
+  - hash:
+      serializedVersion: 2
+      Hash: 3e4274eeaccc5d218a056c2ab43c7847
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
       Hash: b818207c0b8a805931f7a7989870283e
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore
@@ -447,6 +518,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Asset
+  - hash:
+      serializedVersion: 2
+      Hash: 9acf97edd13f96b8a27ab2bbf7701a20
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StateChange
   - hash:
       serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
@@ -531,6 +608,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: d9cf569e3a5a42513d33b1b503176378
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleARCore.HelloAR
+    className: ARSceneController
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -659,6 +742,12 @@ ScriptsOnlyBuild:
     className: CloudAnchorsExampleController
   - hash:
       serializedVersion: 2
+      Hash: 4d25f802949d723b4799cd200ead6bb5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VariableJoystick
+  - hash:
+      serializedVersion: 2
       Hash: 40eab39826f66889566d3a3e6ef95673
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.ObjectManipulation
@@ -725,6 +814,12 @@ ScriptsOnlyBuild:
     className: DetectedPlaneVisualizer
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IsDark
+  - hash:
+      serializedVersion: 2
       Hash: 1db723b554a361a812257e508051085f
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore
@@ -783,6 +878,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: adb067c0aaa982f7cc6d2d1d73ecfb17
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlaneVisualizationManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -891,50 +992,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 3873f7ea95a7920abb506a987b6eb6ba
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LightEstimationTest
-  - hash:
-      serializedVersion: 2
-      Hash: fe51e5e5f02767f5fe8cf3f0f795f783
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: InstantiateObjectOnTouch
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MonsterMove
-  - hash:
-      serializedVersion: 2
-      Hash: 9acf97edd13f96b8a27ab2bbf7701a20
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: StateChange
-  - hash:
-      serializedVersion: 2
-      Hash: d9cf569e3a5a42513d33b1b503176378
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore.HelloAR
-    className: ARSceneController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: IsDark
-  - hash:
-      serializedVersion: 2
-      Hash: adb067c0aaa982f7cc6d2d1d73ecfb17
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlaneVisualizationManager
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Light Estimation.unity
-  playerPath: C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Build/Light
-    Estimation.apk
+  - Assets/Scenes/DragonAR.unity
+  playerPath: C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Build/DragonAR.apk

@@ -1,0 +1,2 @@
+C:\Users\Punit\Desktop\Augmented Reality\Getting started with ARCore\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+C:\Users\Punit\Desktop\Augmented Reality\Getting started with ARCore\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache

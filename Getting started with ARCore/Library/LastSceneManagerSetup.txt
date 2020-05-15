@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Light Estimation.unity
+- path: Assets/Scenes/DragonAR.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

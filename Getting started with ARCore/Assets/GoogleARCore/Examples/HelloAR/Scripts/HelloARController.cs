@@ -81,6 +81,11 @@ namespace GoogleARCore.Examples.HelloAR
         /// <summary>
         /// The Unity Update() method.
         /// </summary>
+        /// 
+
+        public DragonControls dragonControls;
+        bool spawned = false;
+
         public void Update()
         {
             _UpdateApplicationLifecycle();
@@ -103,8 +108,9 @@ namespace GoogleARCore.Examples.HelloAR
             TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
                 TrackableHitFlags.FeaturePointWithSurfaceNormal;
 
-            if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
+            if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit) && spawned==false)
             {
+                spawned = true;
                 // Use hit pose and camera pose to check if hittest is from the
                 // back of the plane, if it is, no need to create the anchor.
                 if ((hit.Trackable is DetectedPlane) &&
@@ -152,6 +158,11 @@ namespace GoogleARCore.Examples.HelloAR
                     // Make game object a child of the anchor.
                     gameObject.transform.parent = anchor.transform;
                 }
+
+                dragonControls.Dragon = GameObjectPointPrefab.transform;
+                dragonControls.Dragon.transform.localEulerAngles = new Vector3(0,180,0);
+
+                dragonControls.gameObject.SetActive(true);
             }
         }
 
