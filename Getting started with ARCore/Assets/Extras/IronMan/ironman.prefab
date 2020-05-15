@@ -2505,6 +2505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2247653228466767817}
+  - component: {fileID: 2861416146984007854}
   m_Layer: 0
   m_Name: ironman
   m_TagString: Untagged
@@ -2521,7 +2522,7 @@ Transform:
   m_GameObject: {fileID: 2984230048662517210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4439492, y: 0.4439492, z: 0.4439492}
+  m_LocalScale: {x: 0.07864793, y: 0.07864793, z: 0.07864793}
   m_Children:
   - {fileID: 2899908797385166527}
   - {fileID: 4831002505439400290}
@@ -2639,6 +2640,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2861416146984007854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2984230048662517210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6ab0ee46c28ad43bcc6d69cd70e497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3086598122159674012
 GameObject:
   m_ObjectHideFlags: 0
