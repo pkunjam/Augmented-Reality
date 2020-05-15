@@ -248,7 +248,13 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPAnchor.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
+    <Compile Include="Assets\Scripts\ARSceneController.cs" />
     <Compile Include="Assets\Scripts\InstantiateObjectOnTouch.cs" />
+    <Compile Include="Assets\Scripts\IsDark.cs" />
+    <Compile Include="Assets\Scripts\LightEstimationTest.cs" />
+    <Compile Include="Assets\Scripts\MonsterMove.cs" />
+    <Compile Include="Assets\Scripts\PlaneVisualizationManager.cs" />
+    <Compile Include="Assets\Scripts\StateChange.cs" />
     <None Include="Assets\Extras\Hologram Shader\Shader\Hologram Shader.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />

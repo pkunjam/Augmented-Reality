@@ -14,7 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PointPlane Detection.unity
     guid: a3ee642c820ccfe469d7bc89c4015d83
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Hit testing.unity
     guid: 17aaac1ee1000c042b307cfe9e438fb8
+  - enabled: 1
+    path: Assets/Scenes/Light Estimation.unity
+    guid: f1c5a6fdd70e2c241b537d6d890fea78
   m_configObjects: {}

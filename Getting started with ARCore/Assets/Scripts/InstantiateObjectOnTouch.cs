@@ -8,6 +8,7 @@
 ==================================================*/
 using UnityEngine;
 using GoogleARCore;
+using GoogleARCore.Examples.HelloAR;
 
 public class InstantiateObjectOnTouch : MonoBehaviour { 
 	public Camera FirstPersonCamera; // The first-person camera being used to render the passthrough camera
