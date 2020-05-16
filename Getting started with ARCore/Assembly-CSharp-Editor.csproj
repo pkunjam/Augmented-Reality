@@ -62,6 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Drone Assets\DronePack\Editor\PA_DroneAxisInputEditor.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Editor\PA_DroneCameraEditor.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Editor\PA_DroneControllerEditor.cs" />
     <Compile Include="Assets\Extras\Hologram Shader\Shader\Editor\HoloGramInspector.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\Common\Scripts\Editor\PointcloudVisualizerEditor.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\InstantPreview\Scripts\Editor\InstantPreviewBugReport.cs" />
@@ -92,9 +95,6 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\LogRequestUtils.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\PreprocessBuildBase.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\RequiredOptionalPreprocessBuild.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Editor\PA_DroneAxisInputEditor.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Editor\PA_DroneCameraEditor.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Editor\PA_DroneControllerEditor.cs" />
     <None Include="Assets\GoogleARCore\Editor\ARCoreiOSDependencies.template" />
     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt" />
     <Reference Include="UnityEditor.TestRunner">
@@ -359,10 +359,10 @@
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.122.0.dll</HintPath>
     </Reference>
     <Reference Include="PA_DronePack">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/ProfessionalAssets/DronePack/Scripts/cmpl/PA_DronePack.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/Drone Assets/DronePack/Scripts/cmpl/PA_DronePack.dll</HintPath>
     </Reference>
     <Reference Include="PA_DronePackEditor">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/ProfessionalAssets/DronePack/Editor/cmpl/PA_DronePackEditor.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/Drone Assets/DronePack/Editor/cmpl/PA_DronePackEditor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>

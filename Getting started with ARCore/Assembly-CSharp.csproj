@@ -62,12 +62,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CourseMaterials\Scripts\DragonControls.cs" />
-    <Compile Include="Assets\CourseMaterials\Virtual Joystick Pack\Example\PlayerExample.cs" />
-    <Compile Include="Assets\CourseMaterials\Virtual Joystick Pack\Scripts\Base\Joystick.cs" />
-    <Compile Include="Assets\CourseMaterials\Virtual Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
-    <Compile Include="Assets\CourseMaterials\Virtual Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
-    <Compile Include="Assets\CourseMaterials\Virtual Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Dragon Assets\Scripts\DragonControls.cs" />
+    <Compile Include="Assets\Dragon Assets\Virtual Joystick Pack\Example\PlayerExample.cs" />
+    <Compile Include="Assets\Dragon Assets\Virtual Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Dragon Assets\Virtual Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\Dragon Assets\Virtual Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Dragon Assets\Virtual Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\CameraTeleportEffect.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\ColliderProxy.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\DroneDistanceLimit.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\DroneSelection.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\EnviromentLighting.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\LookAt.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\NightLights.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\PA_DroneAxisInput.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\PA_DroneCamera.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\PA_DroneController.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\PA_ObjectID.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\PAVR_3DJoystick.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\PAVR_DroneRemote.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\ProximityCannon.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\SoccerGame.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\Turbine.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\Turnable.cs" />
+    <Compile Include="Assets\Drone Assets\DronePack\Scripts\WebGLHideMouse.cs" />
+    <Compile Include="Assets\Drone Assets\UIPack\Scripts\PAUI_Joystick.cs" />
     <Compile Include="Assets\Extras\rotate.cs" />
     <Compile Include="Assets\Extras\test.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\ARCoreAugmentedFaceMeshFilter.cs" />
@@ -254,49 +274,30 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPAnchor.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\CameraTeleportEffect.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\ColliderProxy.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\DroneDistanceLimit.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\DroneSelection.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\EnviromentLighting.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\LevelManager.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\LookAt.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\NightLights.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\PA_DroneAxisInput.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\PA_DroneCamera.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\PA_DroneController.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\PA_ObjectID.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\PAVR_3DJoystick.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\PAVR_DroneRemote.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\ProximityCannon.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\SoccerGame.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\Turbine.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\Turnable.cs" />
-    <Compile Include="Assets\ProfessionalAssets\DronePack\Scripts\WebGLHideMouse.cs" />
-    <Compile Include="Assets\ProfessionalAssets\UIPack\Scripts\PAUI_Joystick.cs" />
     <Compile Include="Assets\Scripts\ARSceneController.cs" />
     <Compile Include="Assets\Scripts\InstantiateObjectOnTouch.cs" />
     <Compile Include="Assets\Scripts\IsDark.cs" />
     <Compile Include="Assets\Scripts\LightEstimationTest.cs" />
     <Compile Include="Assets\Scripts\MonsterMove.cs" />
     <Compile Include="Assets\Scripts\PlaneVisualizationManager.cs" />
+    <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\StateChange.cs" />
     <None Include="Assets\Extras\Hologram Shader\Shader\Hologram Shader.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
-    <None Include="Assets\ProfessionalAssets\DronePack\Shaders\RimGlowShader.shader" />
-    <None Include="Assets\ProfessionalAssets\DronePack\Shaders\VertexAlpha.shader" />
+    <None Include="Assets\Drone Assets\DronePack\Shaders\RimGlowShader.shader" />
+    <None Include="Assets\Drone Assets\DronePack\Shaders\VertexAlpha.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\TransparentShadow.shader" />
     <None Include="Assets\GoogleARCore\Examples\AugmentedFaces\Materials\Shaders\AugmentedFaceOccluder.shader" />
-    <None Include="Assets\ProfessionalAssets\DronePack\Shaders\StandardShader [DoubleSided].shader" />
-    <None Include="Assets\ProfessionalAssets\DronePack\Shaders\StandardSpecular [DoubleSided].shader" />
+    <None Include="Assets\Drone Assets\DronePack\Shaders\StandardShader [DoubleSided].shader" />
+    <None Include="Assets\Drone Assets\DronePack\Shaders\StandardSpecular [DoubleSided].shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PointCloud.shader" />
     <None Include="Assets\Extras\Hologram Shader\Shader\Vertex Glow Shader.shader" />
     <None Include="Assets\GoogleARCore\Examples\ComputerVision\Materials\EdgeDetectionBackground.shader" />
-    <None Include="Assets\ProfessionalAssets\DronePack\Shaders\UFOAnimated.shader" />
-    <None Include="Assets\ProfessionalAssets\DronePack\Shaders\DronePatrolAnimated.shader" />
-    <None Include="Assets\ProfessionalAssets\DronePack\Shaders\SpaceProbeAnimated.shader" />
+    <None Include="Assets\Drone Assets\DronePack\Shaders\UFOAnimated.shader" />
+    <None Include="Assets\Drone Assets\DronePack\Shaders\DronePatrolAnimated.shader" />
+    <None Include="Assets\Drone Assets\DronePack\Shaders\SpaceProbeAnimated.shader" />
     <None Include="Assets\Extras\LaserBeam\LaserBeam.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileSpecularWithLightEstimation.shader" />
     <Reference Include="Unity.Timeline.Editor">
@@ -522,7 +523,7 @@
       <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="PA_DronePack">
-      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/ProfessionalAssets/DronePack/Scripts/cmpl/PA_DronePack.dll</HintPath>
+      <HintPath>C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Assets/Drone Assets/DronePack/Scripts/cmpl/PA_DronePack.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

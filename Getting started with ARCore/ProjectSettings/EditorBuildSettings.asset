@@ -20,7 +20,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Light Estimation.unity
     guid: f1c5a6fdd70e2c241b537d6d890fea78
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DragonAR.unity
     guid: 1e71eef40d123824b8ba42be2c4f95f8
+  - enabled: 1
+    path: Assets/Scenes/Drone AR.unity
+    guid: 677f27c84898dd04898f84ba90c3e8ed
   m_configObjects: {}

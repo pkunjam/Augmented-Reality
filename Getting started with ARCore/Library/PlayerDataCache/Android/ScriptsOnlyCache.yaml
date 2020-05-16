@@ -1,19 +1,16 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - DragonControls
-    - FixedJoystick
     - GoogleARCore.ARCoreBackgroundRenderer
     - GoogleARCore.ARCoreCameraConfigFilter
     - GoogleARCore.ARCoreSession
     - GoogleARCore.ARCoreSessionConfig
     - GoogleARCore.EnvironmentalLight
-    - GoogleARCore.Examples.Common.DetectedPlaneGenerator
     - GoogleARCore.Examples.Common.DetectedPlaneVisualizer
-    - GoogleARCore.Examples.Common.PlaneDiscoveryGuide
-    - GoogleARCore.Examples.Common.PointcloudVisualizer
-    - GoogleARCore.Examples.Common.RawImageVideoPlayer
-    - GoogleARCore.Examples.HelloAR.HelloARController
+    - GoogleARCore.HelloAR.ARSceneController
+    - PA_DronePack.PA_DroneAxisInput
+    - PA_DronePack.PA_DroneController
+    - PA_DronePack.PA_ObjectID
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -22,15 +19,12 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.RawImage
-    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/DragonAR.unity:
+    Assets/Scenes/Drone AR.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -49,9 +43,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
-    - Class: 84
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -62,56 +62,44 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9740}
+      Script: {instanceID: 9760}
     - Class: 114
-      Script: {instanceID: 9990}
+      Script: {instanceID: 9794}
     - Class: 114
-      Script: {instanceID: 9996}
+      Script: {instanceID: 10016}
     - Class: 114
-      Script: {instanceID: 10048}
+      Script: {instanceID: 10078}
     - Class: 114
-      Script: {instanceID: 10398}
+      Script: {instanceID: 10320}
     - Class: 114
-      Script: {instanceID: 10462}
+      Script: {instanceID: 10496}
     - Class: 114
-      Script: {instanceID: 10472}
+      Script: {instanceID: 10506}
     - Class: 114
-      Script: {instanceID: 10490}
+      Script: {instanceID: 10584}
     - Class: 114
-      Script: {instanceID: 10550}
+      Script: {instanceID: 10790}
     - Class: 114
-      Script: {instanceID: 10576}
+      Script: {instanceID: 11032}
     - Class: 114
-      Script: {instanceID: 10662}
+      Script: {instanceID: 11176}
     - Class: 114
-      Script: {instanceID: 10756}
+      Script: {instanceID: 11430}
     - Class: 114
-      Script: {instanceID: 10936}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11076}
+      Script: {instanceID: 11746}
     - Class: 114
-      Script: {instanceID: 11100}
+      Script: {instanceID: 11854}
     - Class: 114
-      Script: {instanceID: 11292}
+      Script: {instanceID: 11904}
     - Class: 114
-      Script: {instanceID: 11378}
-    - Class: 114
-      Script: {instanceID: 11464}
-    - Class: 114
-      Script: {instanceID: 11684}
-    - Class: 114
-      Script: {instanceID: 11688}
-    - Class: 114
-      Script: {instanceID: 11792}
-    - Class: 114
-      Script: {instanceID: 11842}
-    - Class: 114
-      Script: {instanceID: 12188}
+      Script: {instanceID: 12270}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
-    - Class: 137
+    - Class: 134
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -129,17 +117,31 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
-    - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
-      Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 446da847b036e0eb509af34dd7e05cc9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PhysicsPlayground
+    className: SoccerGame
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: dbb0a73c3b5398c9e4f00a2901af6953
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PocketRocket
+    className: DroneSelection
+  - hash:
+      serializedVersion: 2
+      Hash: d93f4f4c1fd32dcdaf045d077e643698
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: PA_ObjectID
   - hash:
       serializedVersion: 2
       Hash: b48c8d99d321541a536d9c6093f31c5d
@@ -208,6 +210,12 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Turnable
+  - hash:
+      serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -230,6 +238,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: 930fbe2bd4cf517982b1d2fdef06945a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PhysicsPlayground
+    className: Turbine
   - hash:
       serializedVersion: 2
       Hash: eafb77726b67b7571818a7210a3ce11e
@@ -262,10 +276,22 @@ ScriptsOnlyBuild:
     className: Joystick
   - hash:
       serializedVersion: 2
+      Hash: 50d063dea4aee72cd816e4383ad61cd5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: PA_DroneCamera
+  - hash:
+      serializedVersion: 2
       Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 40cae40633ff8b0a56998f706dc63688
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: CameraTeleportEffect
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -350,6 +376,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: f4ff78953eae98f13eab2c2e1d8a8c25
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: PA_DroneController
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -514,6 +546,18 @@ ScriptsOnlyBuild:
     className: ARCoreBackgroundRenderer
   - hash:
       serializedVersion: 2
+      Hash: d4d20b63c958ac225db6fe46781bab83
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: DroneDistanceLimit
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: LevelManager
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -526,10 +570,28 @@ ScriptsOnlyBuild:
     className: StateChange
   - hash:
       serializedVersion: 2
+      Hash: 84e58d8242436e921f284d9bc845867d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PhysicsPlayground
+    className: ColliderProxy
+  - hash:
+      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: db105fcb485b693198d8e8e61e444141
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: PAVR_3DJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: d97e5d9fcab530e1ab23bd341a728e11
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PAUI_Joystick
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -574,6 +636,12 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
+      Hash: 88b28e9348753733b7425230c17df745
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: PA_DroneAxisInput
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.CloudAnchors
@@ -610,7 +678,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: d9cf569e3a5a42513d33b1b503176378
+      Hash: e35cfc6fb48548f9b8299aa35d6b01d9
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.HelloAR
     className: ARSceneController
@@ -700,6 +768,12 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: PAVR_DroneRemote
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -742,6 +816,12 @@ ScriptsOnlyBuild:
     className: CloudAnchorsExampleController
   - hash:
       serializedVersion: 2
+      Hash: 0d85f4fda1e0e70cd92c084d12f05cdc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: LookAt
+  - hash:
+      serializedVersion: 2
       Hash: 4d25f802949d723b4799cd200ead6bb5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -752,6 +832,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.ObjectManipulation
     className: TranslationManipulator
+  - hash:
+      serializedVersion: 2
+      Hash: 9b94b48c8d09056cc658389c423c4eb6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: EnviromentLighting
+  - hash:
+      serializedVersion: 2
+      Hash: 11fa2521e4a6151f831d0d2321ab782e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: NightLights
   - hash:
       serializedVersion: 2
       Hash: 869cf1959adcc16e91af1ef34dcc4c97
@@ -770,6 +862,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore
     className: AugmentedImageDatabase
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: WebGLHideMouse
   - hash:
       serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
@@ -844,6 +942,30 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 88b28e9348753733b7425230c17df745
+    assemblyName: PA_DronePack.dll
+    namespaceName: PA_DronePack
+    className: DroneAxisInput
+  - hash:
+      serializedVersion: 2
+      Hash: 50d063dea4aee72cd816e4383ad61cd5
+    assemblyName: PA_DronePack.dll
+    namespaceName: PA_DronePack
+    className: DroneCamera
+  - hash:
+      serializedVersion: 2
+      Hash: f4ff78953eae98f13eab2c2e1d8a8c25
+    assemblyName: PA_DronePack.dll
+    namespaceName: PA_DronePack
+    className: DroneController
+  - hash:
+      serializedVersion: 2
+      Hash: d93f4f4c1fd32dcdaf045d077e643698
+    assemblyName: PA_DronePack.dll
+    namespaceName: PA_DronePack
+    className: ObjectID
+  - hash:
+      serializedVersion: 2
       Hash: 8118d37154f214ab0486c7b2852792b7
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.ObjectManipulation
@@ -878,6 +1000,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 25e997dbf893fa553215293f808c40f2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: PA_DronePack
+    className: ProximityCannon
   - hash:
       serializedVersion: 2
       Hash: adb067c0aaa982f7cc6d2d1d73ecfb17
@@ -994,5 +1122,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scenes/DragonAR.unity
-  playerPath: C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Build/DragonAR.apk
+  - Assets/Scenes/Drone AR.unity
+  playerPath: C:/Users/Punit/Desktop/Augmented Reality/Getting started with ARCore/Build/DroneAR.apk

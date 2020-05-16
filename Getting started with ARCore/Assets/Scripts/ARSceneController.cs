@@ -1,7 +1,7 @@
 ﻿/*=================================================
 ==Adapted by  : Ritesh Kanjee(Augmented Startups)==
-==Date        : 27 March 2018      				 ==
-==Revision    : 1.1 				 		  	 ==	
+==Date        : 06 April 2018      				 ==
+==Revision    : 1.2 				 		  	 ==	
 ==Description : Modified HelloAR Controller  	 ==
 ==			    Cleaned Code                     ==
 ==			   			  	                	 ==	
@@ -22,15 +22,11 @@ namespace GoogleARCore.HelloAR
 
         public Camera FirstPersonCamera;
         public GameObject TrackedPlanePrefab;
-        public GameObject MonsterPrefab;
+        public GameObject DronePrefab;
         public GameObject SearchingForPlaneUI;
-        public int MoveCloserSteps = 5;
         private List<DetectedPlane> m_NewPlanes = new List<DetectedPlane>();
         private List<DetectedPlane> m_AllPlanes = new List<DetectedPlane>();
 
-        public float LightThreshold = 0.4f;
-        private bool IsDark;
-        private bool _isDarkPrevious;
         private bool m_IsQuitting = false;
         public static int CurrentNumberOfMon = 0;
         private GameObject MonsterObject;
@@ -38,7 +34,7 @@ namespace GoogleARCore.HelloAR
 
         void Start()
         {
-            MonsterPrefab.SetActive(true);
+            DronePrefab.SetActive(true);
         }
 
         public void Update()
@@ -118,27 +114,8 @@ namespace GoogleARCore.HelloAR
         }
         private void _LightEstimation()
         {
-            IsDark = Frame.LightEstimate.PixelIntensity < LightThreshold;       //Get the pixel intensity estimate from camera
-            if (MonsterObject != null) 
-            {   
-                if (Frame.LightEstimate.PixelIntensity < LightThreshold)        //If light estimate is below our theshold
-                {
 
-                    MonsterObject.SetActive(true);                              //Activate monster at same pose
-                    if (IsDark && _isDarkPrevious != IsDark)                    //Dark State Event
-                    {
-                        var tra = MonsterObject.transform;                 
-                        var dif = Vector3.ProjectOnPlane(FirstPersonCamera.transform.position, Vector3.up) - Vector3.ProjectOnPlane(tra.position, Vector3.up);
-                        tra.position = tra.position + dif / MoveCloserSteps;    //Make monster move closer to camera when event is detected
-                    }
-                }
-                else
-                {   
-                    MonsterObject.SetActive(false);                             //else when it is light, hide monster
-
-                }
-            }
-            _isDarkPrevious = IsDark;
+            
         }
         public void _InstantiateOnTouch()
         {
@@ -161,7 +138,7 @@ namespace GoogleARCore.HelloAR
                 Debug.Log("Screen Touched");
                 if (CurrentNumberOfMon < numberOfMonsAllowed) {
                     Debug.Log("Current Mons " + CurrentNumberOfMon);
-                    MonsterObject = Instantiate(MonsterPrefab, hit.Pose.position, hit.Pose.rotation);
+                    MonsterObject = Instantiate(DronePrefab, hit.Pose.position, hit.Pose.rotation);
                     CurrentNumberOfMon = CurrentNumberOfMon + 1;// Create an anchor to allow ARCore to track the hitpoint as understanding of the physical world evolves.                                
                     var anchor = hit.Trackable.CreateAnchor(hit.Pose);
                     if ((hit.Flags & TrackableHitFlags.PlaneWithinPolygon) != TrackableHitFlags.None)// Andy should look at the camera but still be flush with the plane.
