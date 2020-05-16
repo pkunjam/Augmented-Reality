@@ -1,3 +1,4 @@
 . filter=lfs diff=lfs merge=lfs -text
 Augmented filter=lfs diff=lfs merge=lfs -text
 Reality filter=lfs diff=lfs merge=lfs -text
+*assets/ filter=lfs diff=lfs merge=lfs -text
