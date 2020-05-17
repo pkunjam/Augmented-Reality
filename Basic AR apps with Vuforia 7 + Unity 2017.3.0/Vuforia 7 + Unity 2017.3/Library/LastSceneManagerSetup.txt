@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Ground Plane.unity
-  isLoaded: 1
-  isActive: 1
